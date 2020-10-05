@@ -32,5 +32,11 @@ namespace Payment.BL.HelperClass
             }
             return false;
         }
+
+        public static bool ValidateCvvNumber(int cvv)
+        {
+            bool isValid = Regex.Match(cvv.ToString(), @"^\d{3}$").Success;
+            return isValid;
+        }
     }
 }

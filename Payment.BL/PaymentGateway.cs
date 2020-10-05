@@ -23,8 +23,8 @@ namespace Payment.BL
         public JsonResultDTO MakePayment(CardDetailDTO cardDetail)
         {
             var isExpiryDateValid = CardValidation.ValidateExpiryDate(cardDetail.ExpiryDate);
-
-            if (isExpiryDateValid)
+            var isCvvValid = CardValidation.ValidateCvvNumber(cardDetail.Cvv);
+            if (isExpiryDateValid && isCvvValid)
             {
                 var bankResponse = IBankRepo.MakePayment(cardDetail);
                 if (bankResponse.Status == "Success")

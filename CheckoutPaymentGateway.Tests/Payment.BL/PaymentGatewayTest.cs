@@ -36,7 +36,7 @@ namespace CheckoutPaymentGateway.Tests.Payment.BL
         }
 
         [TestMethod]
-        public void MakePayment_ShouldReturnFalse_WhenPassedInvalidCardDetails()
+        public void MakePayment_ShouldReturnFalse_WhenPassedInvalidCardExpiryDate()
         {
             CardDetailDTO card = new CardDetailDTO()
             {
@@ -45,6 +45,28 @@ namespace CheckoutPaymentGateway.Tests.Payment.BL
                 Currency = "Euro",
                 Cvv = 123,
                 ExpiryDate = "05/2020"
+            };
+            BankPaymentResponseDTO payment = new BankPaymentResponseDTO()
+            {
+                Identifier = new Guid(),
+                Status = "Success"
+            };
+            mockBankRepositoryService.Setup(x => x.MakePayment(card)).Returns(payment);
+            PaymentGateway paymentGateway = new PaymentGateway(mockBankRepositoryService.Object);
+            var result = paymentGateway.MakePayment(card);
+            Assert.AreEqual(result.IsSuccess, false);
+        }
+
+        [TestMethod]
+        public void MakePayment_ShouldReturnFalse_WhenPassedInvalidCardCvv()
+        {
+            CardDetailDTO card = new CardDetailDTO()
+            {
+                Amount = 100,
+                CardNumber = "1234567891234567",
+                Currency = "Euro",
+                Cvv = 1234,
+                ExpiryDate = "12/2020"
             };
             BankPaymentResponseDTO payment = new BankPaymentResponseDTO()
             {
