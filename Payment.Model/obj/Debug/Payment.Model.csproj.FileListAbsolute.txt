@@ -1,0 +1,6 @@
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.Model\bin\Debug\Payment.Model.dll
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.Model\bin\Debug\Payment.Model.pdb
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.Model\obj\Debug\Payment.Model.csprojAssemblyReference.cache
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.Model\obj\Debug\Payment.Model.csproj.CoreCompileInputs.cache
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.Model\obj\Debug\Payment.Model.dll
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.Model\obj\Debug\Payment.Model.pdb

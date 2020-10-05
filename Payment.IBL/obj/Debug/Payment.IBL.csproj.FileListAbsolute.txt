@@ -1,0 +1,9 @@
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\bin\Debug\Payment.IBL.dll
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\bin\Debug\Payment.IBL.pdb
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\bin\Debug\Payment.Model.dll
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\bin\Debug\Payment.Model.pdb
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\obj\Debug\Payment.IBL.csprojAssemblyReference.cache
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\obj\Debug\Payment.IBL.csproj.CoreCompileInputs.cache
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\obj\Debug\Payment.IBL.csproj.CopyComplete
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\obj\Debug\Payment.IBL.dll
+C:\Users\chirag.shetty\source\repos\CheckoutPaymentGateway\Payment.IBL\obj\Debug\Payment.IBL.pdb
